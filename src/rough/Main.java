@@ -20,11 +20,16 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Node mBox = ((GridPane) root).getChildren().get(0);
-        mBox = new HBox();
+//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+//        Node mBox = ((GridPane) root).getChildren().get(0);
+//        mBox = new HBox();
+//        primaryStage.setTitle("Hello World");
+//        primaryStage.setScene(new Scene(root, 800, 275));
+//        primaryStage.show();
+
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 800, 275));
+        primaryStage.setScene(new Scene(root, 800, 300));
         primaryStage.show();
     }
 
